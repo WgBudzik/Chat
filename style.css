@@ -85,6 +85,7 @@ section {
 
 .time {
   color: var(--time);
+  display: block;
 }
 
 .avatar {
