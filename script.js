@@ -1,9 +1,11 @@
 const btn = document.getElementById("read-btn");
-btn.addEventListener("click", () => {
-  const number = document.querySelector(".number");
-  const unreadMessages = document.querySelector(".unread");
-  const dot = document.querySelector(".dot");
-  number.style.display = "none"
-  dot.style.display = "none"
-  unreadMessages.style.backgroundColor = "grey";
-});
+const readAll = () => {
+  document.querySelector(".number").style.display = "none";
+  document.querySelector(".dot1").style.display = "none";
+  document.querySelector(".dot2").style.display = "none";
+  document.querySelector(".dot3").style.display = "none";
+  document.querySelector(".unread1").style.backgroundColor = "white";
+  document.querySelector(".unread2").style.backgroundColor = "white";
+  document.querySelector(".unread3").style.backgroundColor = "white";
+};
+btn.addEventListener("click", readAll);
