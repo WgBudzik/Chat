@@ -10,4 +10,5 @@ const readAll = () => {
   });
   document.querySelector(".number").style.display = "none";
 };
+
 btn.addEventListener("click", readAll);
